@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SUPER WEB</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <!-- Add your site or application content here -->
+
+   <body>
+        <header>
+            <h1>Ejercicio Formulario de Registro </h1>
+        </header>
+
+        <main>
+            <!-- atributo action es el DESTINO donde envía el contenido del formulario-->
+            <form action="#" name="registro"  method="get" autocomplete="on">
+                
+                <p>
+                    <label for="name">Nombre</label> 
+                    <input type="text" name="name" id="name" placeholder="Jonathan" maxlength="50">
+                </p>
+                
+                <p>
+                    <label for="lastname">Apellido</label> 
+                    <input type="text" name="lastname" id="lastname" placeholder="García" maxlength="50">
+                </p>
+
+                <p><!-- Para que sea excluyento ambas deben tener el mismo   name="ejemplo"
+                    si quieres que se puedan marcar multiples input-radio entonces
+                    el name debe ser diferente-->
+                    Sexo: <br>
+                    <input type="radio" name="sex" id="si" value="y">
+                    <label for="si">Si</label>
+                    <input type="radio" name="sex" id="no" value="n">
+                    <label for="no">No</label>
+                </p>
+
+                <p>
+                    <label for="mail" name="mail">Email:</label>
+                    <input type="mail" name="mail" id="mail" size="30" placeholder="universidadpolitecnica@edu.com">
+                </p>
+
+                <p>
+                    <label for="city" name="city">Seleccione su ciudad:</label> <br>
+                    <select type="" name="city"  id="city">
+                        <option value="">-</option>
+                        <option value="A">Almería</option>
+                        <option value="B">Barcelona</option>
+                        <option value="M">Madrid</option>
+                        <option value="V">Valencia</option>
+                    </select>
+                </p>   
+                
+
+            <p>
+                <label for="description">Descripción</label> <br>
+                <textarea name="description" id="description" cols="40" rows="5"> </textarea>
+            </p>
+
+            <p>
+                <label for="image">Adjuntar archivo:</label>
+                <input type="file" name="image" id="image"> 
+            </p>
+
+            <p>
+                <input type="checkbox" name="newsletter" id="newsletter" checked>
+                <label for="newsletter">Deseo recibir información sobre las novedades</label>
+            </p>
+
+            <p>
+                <input type="checkbox" name="privacy" id="privacy" required>
+                <label for="privacy">He leído y estoy conforme con la política de privacidad</label>
+            </p>
+
+            <p>
+                <button>Enviar</button>
+            </p>
+
+            </form>
+
+       </main>
+    
+        <footer>
+            <p>La SUPER WEB de Miquel. © 2025 </p>
+        </footer>
+    
+    </body>
+</html>
