@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SUPER WEB</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="description" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <!-- Add your site or application content here -->
+
+   <body>
+        <header>
+            <h1>Ejercicios Etiquetas Interactivas</h1>
+        </header>
+
+        <main>
+
+            <h2>Details</h2>
+                <details open>
+                <summary>Instrucciones de uso</summary>
+                    <h4><strong>Instrucciones</strong></h4>
+                    <ol>
+                        <li>Summary es una ETIQUETA dentro de Details</li>
+                        <li>El contenido de Summary es el título del desplegable Details</li>
+                        <li>Atributo Open para que aparezca desplegado</li>
+                        
+                    </ol>
+                    
+                </details>
+
+            <h2>Dialog</h2>
+                <button onclick="document.getElementById('dialog').open=true">Abrir Dialog</button>
+                <dialog id="dialog">
+                    <h4><strong>Instrucciones</strong></h4>
+                    <ol>
+                        <li>Dialog es un "PopUp"</li>
+                        <li>Dialog necesita el atributo id="nombre"</li>
+                        <li>Los botones se referenciaran al dialog por el id</li>
+                        <li>Necesita el atributo Open para que se VISUALICE</li>
+                    </ol>
+                <button onclick="this.parentElement.close()">Cerrar Dialog</button>
+                </dialog>
+
+            <h2>Popover</h2>
+                <button popovertarget="popover" popovertargetaction="toggle">Abrir Popover</button>
+                <div popover id="popover" open>
+                    <h4><strong>Instrucciones</strong></h4>
+                    <ol>
+                        <li>Popover es un ATRIBUTO</li>
+                        <li>Se puede asociar a otras etiquetas</li>
+                        <li>Los botones se referenciaran a la etiqueta por el id</li>
+                                            
+                    </ol>
+                <button popovertarget="popover" popovertargetaction="toggle">Cerrar Popover</button>
+                </div>
+
+            <h2>Datalist</h2>
+                    <h4>Instruciones</h4>
+                    <ol>
+                        <li>Input de texto con selector de opciones</li>
+                        <li>El usuario puede escribir cualquier cosa</li>
+                        <li>Despliega opciones al clickar la flecha al poner el cursor encima</li>
+                        <li>El Input NECESITA el ATRIBUTO list</li>
+                        <li>Que se vincula al ATRIBUTO id del Datalist</li>
+                    </ol>
+
+                    <p> Selecciona el lenguage Web
+                        <input type="text" list="weblang">
+                    </p>
+                    <datalist id="weblang">
+                        <option value="1">Html</option>
+                        <option value="2">CSS</option>
+                        <option value="3">JavaScript</option>
+                    </datalist>
+                
+            <h2>Select2 [librería de JavaScript]</h2>
+                        <!-- target="_blank"  para que abra el link en otra pestaña-->
+                    <a  target="_blank" 
+                        href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/tema-5-imagenes-y-multimedia/topics/clase-15-etiquetas-interactivas/">
+                        Para configurar select2, mirar el video de conquerblocks minuto 32:00
+                    </a>
+
+            <h2>Wysiwyg [librería de JavaScript]</h2>
+                    <a  target="_blank" 
+                        href="https://app.conquerblocks.com/courses/master-en-desarrollo-fullstack/lessons/tema-5-imagenes-y-multimedia/topics/clase-15-etiquetas-interactivas/">
+                        CKEditor, mirar el video de conquerblocks minuto 38:30
+                    </a>
+                    
+                    
+
+
+        </main>
+    
+
+        <footer>
+            <p>La SUPER WEB de Miquel. © 2025 </p>
+        </footer>
+    
+    </body>
+</html>
