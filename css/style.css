@@ -15,8 +15,17 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+div.home {
+  display: flex;
+}
+
+section {
+  width: 50%;
+  margin: 20px;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
